@@ -1,0 +1,100 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ENCRIPTADOR</title>
+    <link rel="icon" href="image/encrip.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <canvas width="500" height="200" id="canv"></canvas>
+
+    <header>
+      <img
+        src="https://www.aluracursos.com/assets/img/challenges/oracle-one/logo_oracleAlura-es.1657102612.svg"
+        alt="Logo"
+        class="logo"
+      />
+      <h1 class="titulo">BIENVENID@ AL ENCRIPTADOR</h1>
+    </header>
+
+    <main>
+      <section class="intro">
+        <div class="contenido">
+          <textarea
+            class="text-entrada"
+            name="entrada"
+            id="entrada"
+            cols="21"
+            rows="10"
+            placeholder="ingrese su texto aquí..."
+          ></textarea>
+          <h6 class="info">
+            <img src="image/foco.svg" alt="" class="foco" /> texto en minuscula,
+            sin acentos ni caracteres especiales.
+          </h6>
+          <button id="encrip" onclick="btnEncriptar()">
+            <img src="image/lock_locked_icon.png" alt="" class="locked" />
+            encriptar
+          </button>
+          <button id="desencrip" onclick="btnDesencriptar()">
+            <img src="image/key.svg" alt="" class="unlocked" /> desencriptar
+          </button>
+        </div>
+      </section>
+      <section class="salida">
+        <div class="contenido">
+          <textarea
+            class="text-salida"
+            name="salida"
+            id="salida"
+            cols="25"
+            rows="10"
+            placeholder="su mensaje se motrara aqui"
+          ></textarea>
+          <br />
+          <button class="copiar" onclick="btnCopiar()">
+            <img src="image/copi_icon.png" alt="" class="copi_logo" /> copiar
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="social">
+        <a
+          class="social-icon"
+          href="https://www.linkedin.com/in/pablo-andres-amaya/"
+          ><i class="fab fa-linkedin-in fa-2x"></i
+        ></a>
+        <a class="social-icon" href="https://github.com/Pablo22Tucu"
+          ><i class="fab fa-github fa-2x"></i
+        ></a>
+        <a
+          class="social-icon"
+          href="https://www.instagram.com/pablo_andres_amaya/"
+          ><i class="fab fa-instagram fa-2x"></i
+        ></a>
+      </div>
+      <hr class="sepa">
+
+      <div class="footer__copy">
+        <p class="text-final">© 2023 - PABLO ANDRES AMAYA.</p>
+      </div>
+    </footer>
+
+    <script
+      src="https://kit.fontawesome.com/2c36e9b7b1.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="matrix.js"></script>
+  </body>
+</html>
